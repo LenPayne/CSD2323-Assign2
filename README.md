@@ -155,6 +155,8 @@ MySQL Database Table we built.
 
 Take a *screenshot* of this page in your web browser, and submit it to D2L.
 
+![Sample Screenshot](https://github.com/LenPayne/CSD2323-Assign2/raw/master/finished-screencap.png)
+
 
 ## Optional Challenges for You to Explore
 
