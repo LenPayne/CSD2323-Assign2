@@ -8,16 +8,19 @@
 </head>
 <body>
     <div class="container">
-        <div class="row"
+        <div class="row">
             <h1 class="col-xs-12">CSD-2323 Assignment 2 for <?php echo $_SERVER['SERVER_NAME']; ?></h1>
         </div>
         <div class="row">
     <?php
-        $db = new PDO('mysql:host=localhost;dbname=assign2,charset=utf8mb4', 'assign2', 'P@ssw0rd');
         try {
+            $db = new PDO('mysql:host=localhost;dbname=assign2', 'assign2', 'P@ssw0rd');
             echo '<table class="col-xs-12 table">';
-            foreach ($db->query('SELECT * FROM assign2') as $row) {
-                echo '<tr><td>' . $row['name'] . '</td><td>' . $row['email'] . '</td></tr>';
+            foreach ($db->query('SELECT * FROM personal') as $row) {
+                echo '<tr><td>' . $row['name'] . '</td>' .
+                    '<td>' . $row['email'] . '</td>' .
+                    '<td>' . $row['description'] . '</td>' .
+                    '</tr>';
             }
             echo '</table>';
         } catch (PDOException $ex) {
