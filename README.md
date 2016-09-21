@@ -111,3 +111,25 @@ of PHP configuration options in your web browser.
 
 We want to use a slightly more interesting application, so we're going to place
 a more robust PHP file into the `/var/www/html` folder and execute it.
+
+Run the following commands to delete the existing files and grab a new one from
+this GitHub repository using `wget`, an excellent file retrieval tool. We must
+delete the existing `index.html` file so that our new `index.php` file is the
+new default page when you navigate to the web server.
+
+    cd /var/www/html
+    sudo rm index.html
+    sudo wget https://raw.githubusercontent.com/LenPayne/CSD2323-Assign2/master/index.php
+
+When this is completed, you should be able to navigate to [http://localhost](http://localhost)
+from a web browser on the Linux machine, and see a table of all entries in the
+MySQL Database Table we built.
+
+Take a *screenshot* of this page in your web browser, and submit it to D2L.
+
+
+## Optional Challenges for You to Explore
+
+1. Add some more information to the database table.
+2. Add some more styling to the PHP page.
+3. Navigate to the web page from your host (Windows) machine's web browser.
