@@ -76,10 +76,11 @@ By default, your MariaDB system is not super secure. There are some basic steps
 you can take to secure it. These are automated by running a command:
 
 ```bash
-mysql_secure_installation
+sudo mysql_secure_installation
 ```
 
-During this process, you will be asked to set your database *root* password. Do
+During this process, you will be asked to set your database *root* password. 
+This is different from your system *root* password, and defaults to blank. Do
 not forget this password. It is annoying to change later.
 
 Once you've set your root password, you can run:
