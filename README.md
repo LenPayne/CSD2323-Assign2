@@ -22,6 +22,7 @@ To turn on the Apache Web Server execute:
 
 ```bash
 sudo systemctl start httpd
+sudo systemctl enable httpd
 ```
 
 The default location for Apache to read from is `/var/www/html`. If you place a
@@ -68,6 +69,7 @@ To turn on the database system, execute the command:
 
 ```bash
 sudo systemctl start mariadb
+sudo systemctl enable mariadb
 ```
 
 By default, your MariaDB system is not super secure. There are some basic steps
